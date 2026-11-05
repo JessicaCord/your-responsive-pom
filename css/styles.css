@@ -1,0 +1,197 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* ___________________________________________________________________ */
+
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  font-family: "Libertinus Sans", sans-serif;
+  background-color: black;
+}
+
+h1 {
+  color: #ff0bac;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+h2 {
+  color: #16d833;
+  font-size: 1.2rem;
+  /*   font-weight: bold; */
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* ul:hover {
+  font-weight: bold;
+} */
+
+ul {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+}
+
+a {
+  color: #ff0bac;
+}
+
+a:hover {
+  color: #1181c8;
+}
+
+img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+
+  /*   height: 450px; */
+}
+
+.button {
+  border: 2px solid black;
+  background-color: #ffe400;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 12px 24px;
+}
+
+.button:hover {
+  background-color: #21b6a8;
+  color: black;
+}
+
+.intro {
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff0bac;
+  font-size: 16px;
+  /*   padding-left: 5px; */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: black;
+  padding-bottom: 2rem;
+}
+
+.allsecs {
+  background-color: black;
+  /*   color: #007e98; */
+}
+
+.secs {
+  max-width: 800px;
+  border: 2px solid blue;
+  padding: 1rem;
+  margin: 2rem auto;
+  /* 	margin: 2rem auto; */
+}
+
+.secs ul {
+  background-color: black;
+  color: white;
+}
+
+.me ul {
+  background-color: black;
+  color: white;
+  max-width: 800px;
+  border: 2px solid blue;
+  padding: 2rem 4rem;
+  margin: 2rem auto;
+  /*   display: block; */
+}
+
+/* ____________________________________________________________ */
+
+@media (max-width: 550px) {
+  .secs {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+    /*     box-sizing: border-box; */
+  }
+
+  .me ul {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+}
+
+/* ____________________________________________________________ */
+
+@media (min-width: 551px) {
+  .secs {
+    padding: 1rem;
+    width: 100%;
+    /*     width: 226px; */
+  }
+
+  .me ul {
+    padding: 1rem;
+    width: 100%;
+    /*     width: 226px; */
+  }
+}
+
+/* ____________________________________________________________ */
+
+@media (min-width: 701px) {
+  .secs {
+    padding: 2rem;
+    border-color: blue;
+    font-size: 1.2rem;
+    background-color: black;
+    /*     flex-basis: calc((100% - 12rem) / 4);
+    gap: 2rem; */
+  }
+
+  .me ul {
+    padding: 2rem;
+    border-color: blue;
+    font-size: 1.2rem;
+    background-color: Black;
+  }
+}
+
+/* ------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------
+------------------------------------------------------ */
+/* Mobile
+the <nav> <ul> loooks weird
+the .me dots are outside
+
+Tablet 
+the .me dots are outside */
+
+/* dont focus under 300px */
